@@ -66,3 +66,12 @@ set laststatus=2
 set showmode
 "コメントの色を水色
 hi Comment ctermfg=grey
+"カッコの補間
+inoremap { {}<Left>
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap " ""<Left>
+inoremap ' ''<Left>
+"Esc押しづらいので入れておく
+inoremap <C-c> <Esc>
+
