@@ -1,0 +1,2 @@
+3.0
+{'vimproc': {'checked_time': 1577898479, 'installed_uri': 'https://github.com/Shougo/vimproc.git', 'installed_path': '/home/tsuyuki/.vim/bundle/vimproc', 'revisions': {'1574985473': '89065f62883edb10a99aa1b1640d6d411907316b'}, 'updated_time': '1574985473'}, 'neobundle.vim': {'checked_time': 1577898480, 'installed_uri': 'https://github.com/Shougo/neobundle.vim.git', 'installed_path': '/home/tsuyuki/.vim/bundle/neobundle.vim', 'revisions': {}, 'updated_time': '1532563471'}}
