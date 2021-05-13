@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/mnt/aoni04/tsuyuki/word2tree/evaluate_tasks/myimdb/data'
+let g:netrw_dirhist_2='/mnt/aoni04/tsuyuki/examples/word_language_model/data'
