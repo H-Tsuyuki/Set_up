@@ -77,84 +77,41 @@ hi Comment ctermfg=grey
 " http://blog.remora.cx/2011/08/yank-to-local-clipboard-from-vim-on-screen.html
 "---------------------------------------------------------------------
 " <Leader>yで最後のヤンクをローカルにコピー
-let g:y2r_config = {
-            \   'tmp_file': expand('$HOME') . '/.screen_exchange',
-            \   'key_file': expand('$HOME') . '/.exchange.key',
-            \   'host': 'localhost',
-            \   'port': 52224,
-            \}
-function Yank2Remote()
-    call writefile(split(@", '\n'), g:y2r_config.tmp_file, 'b')
-    let s:params = ['cat %s %s | nc -w1 %s %s']
-    for s:item in ['key_file', 'tmp_file', 'host', 'port']
-        let s:params += [shellescape(g:y2r_config[s:item])]
-    endfor
-    let s:ret = vimproc#system_bg(call(function('printf'), s:params))
-endfunction
-
-" cygwinの場合はローカルで動作しているとみなしてコピーを設定しない
-if !has('win32unix')
-  nnoremap <silent> <unique> <Leader>y :call Yank2Remote()<CR>
-  nmap <silent> yy  yy:call Yank2Remote()<CR>
-  nmap <silent> y$  y$:call Yank2Remote()<CR>
-  nmap <silent> yG  yG:call Yank2Remote()<CR>
-  nmap <silent> dG  dG:call Yank2Remote()<CR>
-  nmap <silent> yw  yw:call Yank2Remote()<CR>
-  nmap <silent> yiw yiw:call Yank2Remote()<CR>
-  nmap <silent> dd  dd:call Yank2Remote()<CR>
-  nmap <silent> d$  d$:call Yank2Remote()<CR>
-  nmap <silent> D   D:call Yank2Remote()<CR>
-  nmap <silent> Y   Y:call Yank2Remote()<CR>
-  vmap <silent> y   y:call Yank2Remote()<CR>
-  vmap <silent> d   d:call Yank2Remote()<CR>
-endif
+"let g:y2r_config = {
+"            \   'tmp_file': expand('$HOME') . '/.screen_exchange',
+"            \   'key_file': expand('$HOME') . '/.exchange.key',
+"            \   'host': 'localhost',
+"            \   'port': 52224,
+"            \}
+"function Yank2Remote()
+"    call writefile(split(@", '\n'), g:y2r_config.tmp_file, 'b')
+"    let s:params = ['cat %s %s | nc -w1 %s %s']
+"    for s:item in ['key_file', 'tmp_file', 'host', 'port']
+"        let s:params += [shellescape(g:y2r_config[s:item])]
+"    endfor
+"    let s:ret = vimproc#system_bg(call(function('printf'), s:params))
+"endfunction
+"
+"" cygwinの場合はローカルで動作しているとみなしてコピーを設定しない
+"if has('unix')
+"  nnoremap <silent> <unique> <Leader>y :call Yank2Remote()<CR>
+"  nmap <silent> yy  yy:call Yank2Remote()<CR>
+"  nmap <silent> y$  y$:call Yank2Remote()<CR>
+"  nmap <silent> yG  yG:call Yank2Remote()<CR>
+"  nmap <silent> dG  dG:call Yank2Remote()<CR>
+"  nmap <silent> yw  yw:call Yank2Remote()<CR>
+"  nmap <silent> yiw yiw:call Yank2Remote()<CR>
+"  nmap <silent> dd  dd:call Yank2Remote()<CR>
+"  nmap <silent> d$  d$:call Yank2Remote()<CR>
+"  nmap <silent> D   D:call Yank2Remote()<CR>
+"  nmap <silent> Y   Y:call Yank2Remote()<CR>
+"  vmap <silent> y   y:call Yank2Remote()<CR>
+"  vmap <silent> d   d:call Yank2Remote()<CR>
+"endif
 
 
 "===========================================
 "キーマッピング
 "===========================================
 inoremap <C-c> <Esc>    "Esc押しづらいので入れておく
-
-
-
-"---------------------------------------------------------------------
-" neobundle
-"---------------------------------------------------------------------
-filetype plugin indent off     " Required!
-if has('vim_starting')
-  if has('win32') " WindowsのGVIMなら
-    set runtimepath+=C:/cygwin/home/tm/.vim/bundle/neobundle.vim
-    call neobundle#begin('C:/cygwin/home/tm/.vim/bundle')
-  else
-    set runtimepath+=~/.vim/bundle/neobundle.vim
-    call neobundle#begin(expand('~/.vim/bundle'))
-  endif
-endif
-  let g:neobundle_default_git_protocol='https'
-  NeoBundleFetch 'Shougo/neobundle.vim'
-
-  " Installation check.
-  if neobundle#exists_not_installed_bundles()
-    echomsg 'Not installed bundles : ' .
-          \ string(neobundle#get_not_installed_bundle_names())
-    echomsg 'Please execute ":NeoBundleInstall" command.'
-    "finish
-  endif
-
-  " ---- repository on github ----
-
-  NeoBundle 'Shougo/vimproc', {
-    \ 'build' : {
-    \     'windows' : 'make -f make_mingw32.mak',
-    \     'cygwin' : 'make -f make_cygwin.mak',
-    \     'mac' : 'make -f make_mac.mak',
-    \     'unix' : 'make -f make_unix.mak',
-    \    },
-    \ }
-
-call neobundle#end()
-filetype plugin indent on     " Required!
-
-" ファイルを開いたときのテンプレート
-"autocmd BufNewFile *.sh 0r ~/Templates/shell.sh
-"autocmd BufNewFile *.py 0r ~/Templates/python.py
+set clipboard+=unnamed
