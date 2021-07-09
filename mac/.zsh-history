@@ -1,0 +1,237 @@
+b
+rm aaa
+source
+sou .zprofile
+source .zprofile
+vim .zprofile
+jjjjjj
+cdr
+c
+tma
+tmux attach
+tml
+exit
+mv .zshrc Set_up/linux/
+mv .tmux.conf Set_up/linux/
+mv .vimrc Set_up/linux/
+cp .vim Set_up/
+cp -r .vim Set_up/
+cp Set_up/linux/.* .
+git add .
+git commit -m "zsh"
+git pull
+git push
+cat memo.txt
+ssh resucue
+mv .ssh ssh_old
+vim id_rsa.pub
+vim id_rsa
+mv id_rsa id_rsa_for_rescue
+mv id_rsa.pub id_rsa_for_rescue.pub
+ssh-keygen
+mv id_rsa id_rsa_for_cid
+mv id_rsa.pub id_rsa_for_cid.pub
+mv ../ssh_old/* .
+rm -rf ssh_old/
+scp rescue:~/ id_rsa_for_rescue.pub
+scp id_rsa_for_rescue.pub rescue:~/
+scp id_rsa_for_cid.pub rescue1:~/.ssh
+cd cygwin/
+scp .vimrc rescue1:~/.bashrc
+scp .bashrc rescue1:~/.bashrc
+scp -r .vim rescue1:~/.vim
+ssh hiroaki_tsuyuki@35.194.113.204\
+
+ssh rescue1
+source .zshrc
+http://localhost:8889/?token=c86fef3dad99ba556b3f9585916c9130cab5f1bd7f10d007\
+
+ssh -L 8889:localhost:8889 cid
+git
+git config --global user.name "htsuyuki"
+ssh-keygen -t rsa -f gitlab_rsa
+cd htsuyuk/
+mv gitlab_rsa* .ssh/
+cat gitlab_rsa.pub
+xsel
+sudo yum install xsel
+rm gitlab_rsa*
+git config --global user.email "h.tsuyuki@ntt.com"
+ssh rescue
+vim PA_20210520_morishita.ipynb
+_wget https://wikidoc.nttonesky.net/download/attachments/97197580/PEOPLE„É£É∑„É£≠„É£Éµ„ÇÉÅ„Ç§„É£´.zip?api=v2
+unzip PEOPLE„É£É∑„É£≠„É£Éµ„ÇÉÅ„Ç§„É£´.zip
+git init
+mkdir issue5
+mv issue5/ issue6
+mv ../* issue6/
+cd pa/
+git add pa_people.ipynb
+mv Desktop/PA* Develop/PA/pa/issue6/
+cd Develop/PA/pa/issue6/
+mkdir data
+mv *.xlsx data/
+mv export_department_data_20210514180358.tsv data
+mkdir wcs
+mkdir wss
+mkdir people
+mv PA2011_WSS_PEOPLE.xlsx wss/
+mv PA2* wcs
+mv user_profile_20210520.xlsx people/
+mv export_department_data_20210514180358.tsv people/
+cd Develop/
+mkdir cotoha_api
+pip3 list
+pyenv
+pip3 install urllib.request
+/opt/anaconda3/bin/conda init zsh\
+
+cd Develop/cotoha_api/
+cd PA/pa/issue6
+pwd
+source ~/.zshrc
+export PYTHONPATH="${PYTHONPATH}:/Users/htsuyuk/Develop/cotoha_api\
+"; python tmp.py
+python cotoha_api.py
+cd PA/
+cp tmp.py ../../../cotoha_api/
+cd cotoha_api/
+cd PA/pa/
+export PYTHONPATH="${PYTHONPATH}:/Users/htsuyuk/Develop"; python tmp.py
+vim config.ini
+export PYTHONPATH="${PYTHONPATH}:/Users/htsuyuk/Develop/cotoha_api"; python tmp.py
+vim ~/.zshrc
+vim cotoha_api.py
+python tmp.py
+unzip FalconSensorMacOS.zip
+sudo /Applications/Falcon.app/Contents/Resources/falconctl license 7F73A1BCBFF84CoFBDFA13F6C79FD943-5d
+sudo /Applications/Falcon.app/Contents/Resources/falconctl license 7F73A1BCBFF84C0FBDFA13F6C79FD943-5D
+sudo /Applications/Falcon.app/Contents/Resources/falconctl stats
+sudo /Applications/Falcon.app/Contents/Resources/falconctl grouping-tags set DEP50722,A20200512-01
+sudo /Applications/Falcon.app/Contents/Resources/falconctl grouping-tags unload
+sudo /Applications/Falcon.app/Contents/Resources/falconctl unload
+sudo /Applications/Falcon.app/Contents/Resources/falconctl load
+sudo /Applications/Falcon.app/Contents/Resources/falconctl grouping-tags get
+pip install japanese-matplotlib
+pip install japanize-matplotlib
+cd .ssh
+vim config
+ssh rescue -L 444444:localhost:40001
+ssh rescue -L 44444:localhost:4000
+ssh rescue -L 4444:localhost:4000
+cp jupyter_notebook.sh jupyter_notebook_horiguchi.sh
+git config --get
+history
+cd develop
+cd PA
+mv pa/ pa
+mv pa/ pa2
+git clone https://gitlab.vt-assistant.com/gitlab/secure-projects/pa
+mv pa2/issue6/ pa/
+cd p
+cd pa
+cd issue6
+cd data/
+cd people/
+cd wcs
+cd wss
+cp -r issue6/ ../pa2/
+rm pa_people.ipynb
+vim D18-2018.7.24.xlsx
+rm D18-2018.7.24.xlsx
+rm people_prof.csv
+rm people_prof-2.csv
+vim tmp.py
+rm tmp.py
+cd issue6/
+mv data/ ..
+mv people_prof_annotated.csv ..
+git add issue6/
+git checkout -b issue6
+git branch
+git add issue6
+git commit -m "people"
+git push origin issue6
+ls Desktop/
+mkdir Develop/bcon
+mv Desktop/*.csv Develop/bcon/
+mv Downloads/LBC%E* Develop/bcon/
+cd Develop/bcon/
+tmu
+mv LBC%E7%B4%8D%E5%93%81%E9%A0%85%E7%9B%AE_180329-1.xls mv LBC
+mv LBC LBCÁ¥É≠ÂÉ≥ÅÈÉÄÉ•ÁÉªÆ_180329-1.xls
+mv LBC%E5%AE%9A%E7%BE%A9%E6%9B%B8_20170206.xls LBCÂÆÉ∫Áæ©ÊÉª∏_20170206.xls
+mv LBC%E7%B4%8D%E5%93%81%E9%A0%85%E7%9B%AE_180329-1.xls LBCÁ¥É≠ÂÉ≥ÅÈÉÄÉ•ÁÉªÆ_180329-1.xls
+uu
+zsh jupyter_notebook_horiguchi.sh
+cp jupyter_notebook.sh jupyter_notebook_test_cid.sh
+vim jupyter_notebook_horiguchi.sh
+vim jupyter_notebook_test_cid.sh
+vim classifier_data_pos_neutral.csv
+zsh jupyter_notebook_test?cid.sh
+cp jupyter_notebook_test_cid.sh jupyter_notebook_cid_mobpro.sh
+vim jupyter_notebook_cid_mobpro.sh
+vim jupyter_notebook.sh
+cd Develop/Cid
+git clone https://gitlab.vt-assistant.com/gitlab/api-solution/sns-analysis/analysis-server/-/tree/master
+git clone git@gitlab.vt-assistant.com:api-solution/sns-analysis/analysis-server.git
+git clone https://gitlab.vt-assistant.com/gitlab/api-solution/sns-analysis/analysis-server.git
+mv classifier_data_3values.csv analysis-server/data/annotations_for_classifier/
+cd analysis-server/
+git commit -m "3ÂÄ§"
+git checkout -b tsuyuki
+git checkout -b annotation
+git add data/annotations_for_classifier/classifier_data_3values.csv
+git commit -m "3ÂÄ§„Å´„ÅÉπ„ÇÉ´"
+git push origin annotation
+git status
+git config
+git config -l
+scp Desktop/twitter_data.zip cid:~/
+/opt/anaconda3/bin/jupyter_mac.command ; exit;
+htop
+zsh jupyter_notebook_cid_mobpro.sh
+zsh jupyter_notebook_test_cid.sh
+vim .tmux.conf
+vim tweets.csv
+python
+jupyter notebook
+scp -r Downloads/ALBERT\(MeCab+NEologdÂÉØÉ™„Å≥Sentencepiece,Ë™ÉæÂΩÉπÊÉµ∞32000,Â§ßË¶ÉØÊ®ÉÅÊÉ∑•ÊÉº¨Ë™Éæ„É£É≥„Ç∏„É£É≠„Çπ„É£É´„É£•„É£º„Çπ„Ç≥„É£º„É£É±„Çπ\)/PyTorchÁÉ©É®/ cid:~/
+tmux
+ssh cid
+zsh jupyter_notebook.sh
+vim ~/.shh
+vim ~/.ssh/config
+tmux a
+vim memo.txt
+cd Set_up/
+cd linux/
+vim .zshrc
+ll
+u
+l
+la
+vim gitconfig
+vim .gitconfig
+cd Downloads/
+ls
+scp wago.121808.pn.txt cid:~/
+scp pn.csv.m3.120408.trim.csv cid:~/
+: 1625770462:0;ssh cid
+: 1625790960:0;scp Downloads/„ÇÉÇ„É£≥„Ç±„É£º„É£É®ÊÉ£É•ÂÉÄ±„Çµ„É£≥„É£É∑„É£´\ -\ „Ç≥„É£É¥„É£º-2.csv cid:~/cid/cnn_pos/data/
+: 1625793951:0;zsh jupyter_notebook.sh
+: 1625794970:0;ls
+: 1625794978:0;cd Set_up/
+: 1625794983:0;git status
+: 1625794997:0;mkdir mac
+: 1625794999:0;u
+: 1625795000:0;l
+: 1625795011:0;cp *.sh Set_up/mac/
+: 1625795016:0;cd temp/
+: 1625795016:0;ls
+: 1625795019:0;l
+: 1625795020:0;u
+: 1625795020:0;l
+: 1625795022:0;ls
+: 1625795023:0;la
+: 1625795045:0;cp .* Set_up/mac/
